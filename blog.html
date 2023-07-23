@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Nuestro Blog</title>
+    <style>
+        /* Estilos personalizados */
+        .content-container li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .content-container img {
+            width: 200px; /* Ajusta el tamaño de la imagen según tus necesidades */
+            margin-right: 20px;
+        }
+
+        .content-container .description {
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="blog">
+    <div class="text-container">
+        <div class="title-container">
+            <h1>Nuestro Blog</h1>
+        </div>
+        <div class="content-container">
+            <p>Descubre aquí los servicios que ofrecemos.</p>
+            <ul>
+                <li>
+                    <img src="/imagenes/desayunos.jpg" alt="Descripción de la imagen 1" />
+                    <div class="description">
+                        <h2>Descripción y presentación de: Desayunos</h2>
+                        <p>Aquí puedes escribir la descripción de los desayunos.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="/imagenes/almuerzos.jpg" alt="Descripción de la imagen 2" />
+                    <div class="description">
+                        <h2>Descripción y presentación de: Almuerzos</h2>
+                        <p>Aquí puedes escribir la descripción de los almuerzos.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="/imagenes/cenas.jpg" alt="Descripción de la imagen 3" />
+                    <div class="description">
+                        <h2>Descripción y presentación de: Cenas</h2>
+                        <p>Aquí puedes escribir la descripción de las cenas.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

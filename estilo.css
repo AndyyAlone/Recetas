@@ -1,0 +1,258 @@
+/* Barra de navegación */
+header {
+    background-color: #7b7035;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lista de elementos de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Elemento de navegación */
+nav li {
+    margin-right: 10px;
+}
+
+/* Enlaces de navegación */
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para cada clase de enlace */
+.red {
+    background-color: #ff0000;
+}
+
+.green {
+    background-color: #4ab04a;
+}
+
+.yellow {
+    background-color: #1573b5;
+}
+
+.purple {
+    background-color: #4471d1;
+}
+
+/* Enlace activo */
+nav a.active {
+    background-color: #555;
+}
+
+/* Submenú */
+.submenu {
+    display: none;
+}
+/**SELECTOR QUE NO CUMPLE NINGUNA FUNCION
+.expanded .submenu {
+    display: block;
+}*/
+
+/* Botón de menú */
+
+/** SELECTOR A UN ELEMENTO QUE NO EXISTE EN EL HTML
+.button-menu-toggle {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    font-size: 16px;
+}*/
+
+/**SELECTOR SIN FUNCION
+nav li.categories {
+    display: flex;
+    align-items: center;
+}*/
+
+/* Estilos para el submenu */
+
+nav li.categories {
+    position: relative;
+}
+
+nav li.categories .submenu {
+    display: none;
+    position: absolute;
+    background-color: #7b7035;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+/** EL HOVER ES UNA PSEUDOCLASE QUE ACTÚA CUANDO EL MOUSE SE POSICIONA SOBRE EL ELEMENTO, ES POR ESO QUE SE ACTIVABA.
+nav li.categories:hover .submenu {
+    display: block;
+}*/
+
+nav li.categories .submenu li {
+    margin: 0;
+}
+
+nav li.categories .submenu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Cambios en los estilos para el enlace "Categorías" */
+nav li.categories > a {
+    background-color: #94d011;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+}
+/** SELECTOR REPETIDO NO CUMPLE NINGUNA FUNCION 
+nav li.categories .submenu {
+    display: none;
+    position: absolute;
+    background-color: #a93dad;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}*/
+
+/**CORRECCION DEL SELECTOR EL .active VA AL FINAL*/
+nav li.categories .submenu.active {
+    display: block;
+}
+/*Con estos cambios, el submenu de categorías se desplegará hacia abajo, 
+debajo del elemento padre, evitando que tape el nombre de categorías.*/
+
+/*Fondo con una foto*/
+body {
+    background-image: url('https://get.wallhere.com/photo/food-cake-breakfast-chocolate-dessert-baking-cherry-sweet-bakery-meal-patisserie-cuisine-sweetness-dish-flavor-baked-goods-sweet-table-623171.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Estilos para los contenedores de título y contenido */
+.title-container {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #7b7035;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.content-container {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #7b7035;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.title-container h1, .content-container p, .content-container ul {
+    color: #fff;
+}
+
+/* Estilos para Contacto */
+body.contact {
+    background-image: url('https://get.wallhere.com/photo/food-cake-breakfast-chocolate-dessert-baking-cherry-sweet-bakery-meal-patisserie-cuisine-sweetness-dish-flavor-baked-goods-sweet-table-623171.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-container h1.contact, .text-container p.contact {
+    color: #fff;
+}
+
+/* Estilos para Blog */
+body.blog {
+    background-image: url('https://get.wallhere.com/photo/food-cake-breakfast-chocolate-dessert-baking-cherry-sweet-bakery-meal-patisserie-cuisine-sweetness-dish-flavor-baked-goods-sweet-table-623171.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-container h1.blog, .text-container p.blog, .text-container ul.blog {
+    color: #fff;
+}
+/*Con estos cambios, los textos de contact.html y blog.html estarán encerrados en contenedores y se les aplicarán los estilos 
+adecuados según las clases asignadas en los archivos HTML. Además, se utilizará el fondo y el color de texto correspondiente 
+en cada página.
+
+/* Tamaño predeterminado de todas las imagenes*/
+
+img {
+    width: 200px;
+    height: auto;
+  }
+
+
+/*Contorno del video*/
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b61111; /* Cambia #fff por el color que desees */
+    padding: 20px;
+    max-width: 560px; /* Ajusta el valor según el ancho máximo deseado */
+    margin: 0 auto; /* Agrega esta línea para centrar horizontalmente */
+}
+
+header {
+    margin-bottom: 20px; /* Ajusta el valor según la separación deseada */
+}
+
+.contorno {
+    border: 1px solid black;
+    padding: 10px;
+    width: 300px;
+    margin: 0 auto; /* Centra el contorno horizontalmente */
+}
+
+.video-container {
+    border: 1px solid black;
+    padding: 10px;
+    animation: colorChange 1s infinite;
+}
+
+.text-background {
+    background-color: black;
+    padding: 10px;
+    display: inline-block;
+}
+
+.video-text {
+    color: rgb(8, 0, 0);
+    font-weight: bold;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: green;
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: purple;
+    }
+}
+
+.text-background {
+    animation: colorChange 1s infinite;
+}
